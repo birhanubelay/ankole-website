@@ -91,7 +91,7 @@
 .navigation-bar {
   background-color: #333;
   position: fixed;
-  top: 85%;
+  top: 89%;
   width: 41%;
   padding: 0.5%;
   text-align: center;
@@ -131,7 +131,7 @@
   display: inline-block;
   position: relative;
   top: -95vh;
-  left: 43%;
+  left: 40%;
 }
 
 .logo img {
@@ -229,14 +229,63 @@
 .openning-hours:hover .schedule {
   display: block;
 }
-
-
-
-
-
-
-
-
+@media (max-width: 375px){
+  body{
+      overflow: hidden;
+  }
+  .logo{
+      width: 40%;
+      padding-top: 30%;
+    
+  }
+    #instagram, #facebook {
+      align-items: center;
+      flex-direction: column;
+ 
+  }
+  h1{
+      font-size: xxx-large;
+      position: relative;
+      top:38%;
+  }
+  .navigation-bar{
+      width:70vw;
+  }
+  .hide{
+      display: none;
+  }
+}
+@media (width: 390px)
+{
+  body{
+      max-width: 150vh;
+      height: 100vh;
+      overflow: hidden;
+     
+ 
+  }
+  #instagram,#facebook {
+      align-items: center;
+      flex-direction: column;
+ 
+  }
+  .navigation-bar{
+  height: 15px;
+  }
+  .ankole-grill{
+      height: 100vh;
+      width: 100vw;
+  }
+      .logo {
+          width: 50%;
+ 
+      }
+      .ankole-grill{
+          h1{
+              font-size: xxx-large;
+          }
+        }
+      }
 
 
 

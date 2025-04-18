@@ -13,7 +13,7 @@ body{
     width: 37%;
     padding: 0.5%;
     text-align: center;
-    left: 20%;
+    left: 30%;
     border-radius: 40px;
     font-family: poppins;
   }
@@ -24,14 +24,14 @@ body{
     text-align: center;
     padding: 16px 16px 5px 16px;
     text-decoration: none;
-    /* font-size: 130%; */
   }
   .navigation-bar button {
     padding: 12%;
     border-radius: 30px;
     cursor: pointer;
     font-size: 100%;
-    margin-top: -10%;
+    position: relative;
+    bottom: 10px;
     background-color:rgb(153, 134, 153);
     font-family: poppins;
   }
@@ -42,26 +42,26 @@ body{
     color:black;
   }
   #whatsApp{
-    background-color: black;
-    font-size: 350%;
-    color: white;
-    margin-top: 60vh;
-    left:175vh;
-    position: fixed;
-    a{
-      z-index: 10;
-      
-    }
+    color:rgb(141, 133, 133);
+    position: relative;
+    top: 89vh;
+    left: 170vh;
+    font-size: 200%;
+    border:solid 1px gray;
+    border-radius: 50px;
+    padding:5px;
   }
   .main-contents {
     display: none;
     position: absolute;
-    background-color:black;
-    min-width: 220px;
-    height: 35vh;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: black;
+    min-width: 180px;
+    bottom:6vh;
     z-index: 1;
-    bottom:70px;
+    padding:2%;
+    border-radius:25px;
+    height:270px;
+    line-height: 0.7;
   }
   .main-contents hr{
     color: rgb(24, 22, 22);
@@ -91,6 +91,9 @@ body{
     bottom: 20px;
     z-index: 1;
     padding:2%;
+    border-radius:25px;
+    height:270px;
+    line-height: 0.7;
   }
   .openning-hours{
     position: relative;
@@ -147,10 +150,37 @@ body{
     width:13%;
     margin-left: 42.5%;
   }
-  .social-media{
-    color:rgb(100, 96, 96);
+  #instagram {
+    color:rgb(141, 133, 133);
     margin-top: 5%;
-    margin-left: 90%;
-    position: fixed;
-    font-size: 200%;
+    left: 90%;
+    position: absolute;
+    font-size: 100%;
+    border:solid 1px gray;
+    border-radius: 50px;
+    padding:5px;
   }
+  #facebook{
+    color:rgb(141, 133, 133);
+    margin-top: 5%;
+    left: 93%;
+    position: absolute;
+    font-size: 100%;
+    border:solid 1px gray;
+    border-radius: 50px;
+    padding:5px;
+  }
+  #quote-left {
+    color: orangered;
+    font-size: 60px;
+    right: 77%;
+    top: 35vh;
+    position: absolute;
+  }
+  #qoute-right{
+    color: orangered;
+    font-size: 60px;
+    left: 78%;
+    bottom: 35%;
+    position: absolute;
+  }  
