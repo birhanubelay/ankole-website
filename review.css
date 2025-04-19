@@ -1,16 +1,20 @@
-body{
-  overflow:hidden
+@font-face {
+  font-family: poppins;
+  src: url(poppins/Poppins-Regular.ttf)
 }
-.fixed-page{
-    display:flex;
-    position: fixed;
-    justify-content: space-between;
-  }
+
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand/Quicksand-VariableFont_wght.ttf)
+}
+.review-page{
+  overflow-y:hidden
+}
   .navigation-bar {
     background-color: #333;
     position: fixed;
     top: 85%;
-    width: 37%;
+    width: 40%;
     padding: 0.5%;
     text-align: center;
     left: 30%;
@@ -115,9 +119,6 @@ body{
     font-family: Quicksand;
     font-weight: bold;
   }
-  @media only screen and (max-width: 300px) {
-    .back, .continue{font-size: 11px}
-  }
   .customer-feedback {
     animation-name: customer-feedback;
     animation-duration: 1.5s;
@@ -146,7 +147,7 @@ body{
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  .review-logo img{
+  .logo img{
     width:13%;
     margin-left: 42.5%;
   }
@@ -184,3 +185,48 @@ body{
     bottom: 35%;
     position: absolute;
   }  
+  @media (max-width: 768px){
+  
+    /* .logo{
+        width: 40%;
+        padding-top: 30%;
+  
+    } */
+      #instagram{
+        margin-left: -7%;
+    }
+    #facebook{
+      margin-left: -3%;
+    }
+    .navigation-bar{
+        width:60%;
+        margin: 0%;
+        padding: 0%;
+        left: 10px;
+    }
+    .main-contents{
+      top:10%;
+    }
+    #whatsApp{
+      left:85%;
+    }
+    .navigation-bar button{
+      margin:0;
+      padding:0;
+      margin-top: 10%;
+    }
+    .navigation-bar a{
+      padding:0.5;
+    }
+    .recieved{
+      font-size:xx-small;
+
+    }
+    #about-ankole, #menu-ankole, #review-ankole, #event-ankole, #live-ankole,#contact-ankole{
+      display:none;
+    }
+    .back, .continue,#quote-left,#qoute-right{
+      font-size:smaller;
+    }
+  
+  }

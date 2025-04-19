@@ -1,5 +1,5 @@
-.body{
-  overflow:hidden;
+.live-page{
+  overflow-y:hidden;
 }
 .live{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/young-adults-playing-percussion-instruments-music-festival-generated-by-ai_24640-82003.jpg);
@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
   }
 .current-live{
-    margin-left: 5%;
+   margin-left: 20%;
     overflow-y: scroll;
     height:100vh;
     display: inline;
@@ -121,22 +121,93 @@
   .tukatike h1{
     color:rgb(167, 12, 12)
   }
-  .live-logo img{
-    width:250px;
-    margin-left: 20%;
+  .logo {
+    color:white;
+    position: absolute;
+    left: 20%;
+    z-index: 10;
+    top:5%;
   }
-  #live-whatsApp{
-    background-color: black;
-    font-size: 350%;
-    color: white;
-    top: 85vh;
-    position: relative;
-    left:85vh;
+  
+  .logo img {
+    width: 60%;
   }
-  .social-media{
-    color:rgb(97, 93, 93);
-    margin-top: 5%;
-    margin-left: 90%;
+  
+  #whatsApp {
+    color: rgb(141, 133, 133);
+    top: 90vh;
+    left: 175vh;
+    font-size: 250%;
+    position: absolute;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #333;
     position: fixed;
-    font-size: 200%;
+  }
+  #instagram {
+    color: rgb(141, 133, 133);
+    top: 5%;
+    left: 90%;
+    position: absolute;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  #facebook {
+    color: rgb(141, 133, 133);
+    top: 5%;
+    left: 93%;
+    position: absolute;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  @media (max-width: 768px){
+    
+    .logo{
+        width: 40%;
+        margin-top: 0%;
+        margin-left: 8%;
+    }
+      #instagram{
+        margin-left: -7%;
+    }
+    #facebook{
+      margin-left: -3%;
+    }
+    .nav-bar{
+        width:100%;
+        margin: 0%;
+        padding: 0%;
+        left: 0;
+    }
+    #whatsApp{
+      left:85%;
+  
+    }
+    .nav-bar button{
+      margin:0;
+      padding:0;
+      margin-top: 10%;
+    }
+    .nav-bar a{
+      padding:0.5;
+      font-size: 10px;
+    }
+    .live{
+      flex-direction: column;
+    }
+    .live-detail{
+      flex-direction: column;
+    }
+    .current-live{
+      margin-left:0%;
+    }
+    .tukatike, .current-live{
+      font-size: smaller;
+    }
+    #about-ankole, #menu-ankole, #review-ankole, #event-ankole, #live-ankole,#contact-ankole{
+      display:none;
+    }
   }

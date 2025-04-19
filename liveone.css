@@ -1,13 +1,17 @@
-.fixed-page{
-    display:flex;
-    position: fixed;
-    justify-content: space-between;
-  }
+font-face {
+  font-family: poppins;
+  src: url(poppins/Poppins-Regular.ttf)
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand/Quicksand-VariableFont_wght.ttf)
+}
   .navigation-bar {
     background-color: #333;
     position: fixed;
     top: 89%;
-    width: 37%;
+    width: 38%;
     padding: 0.5%;
     text-align: center;
     left: 20%;
@@ -21,13 +25,11 @@
     text-align: center;
     padding: 16px 16px 5px 16px;
     text-decoration: none;
-    /* font-size: 130%; */
   }
   .navigation-bar button {
     padding: 12%;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 100%;
     margin-top: -10%;
     background-color:rgb(153, 134, 153);
     font-family: poppins;
@@ -41,12 +43,14 @@
   .main-contents {
     display: none;
     position: absolute;
-    background-color:black;
-    min-width: 220px;
-    height: 35vh;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: black;
+    min-width: 180px;
+    bottom:6vh;
     z-index: 1;
-    bottom:70px;
+    padding:2%;
+    border-radius:25px;
+    height:270px;
+    line-height: 0.7;
   }
   .main-contents hr{
     color: rgb(24, 22, 22);
@@ -76,6 +80,9 @@
     bottom: 20px;
     z-index: 1;
     padding:2%;
+    border-radius:25px;
+    height:270px;
+    line-height: 0.7;
   }
   .openning-hours{
     position: relative;
@@ -90,18 +97,80 @@
     height:180vh;
     overflow-y: scroll;
   }
-  .social-media{
+  #fadhilee-live{
     color:white;
-    margin-top: 5%;
-    margin-left: 90%;
-    position: fixed;
-    font-size: 200%;
+    position: relative;
+    left:35%;
+    top:30%;
+    font-size: 300%;
   }
-  #whatsApp{
-    background-color: black;
-    font-size: 350%;
-    color: white;
-    margin-top: 89vh;
-    left:175vh;
+  #whatsApp {
+    color: rgb(141, 133, 133);
+    top: 90vh;
+    left: 175vh;
+    font-size: 250%;
     position: fixed;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #333;
+    position: fixed;
+  }
+  #instagram {
+    color: rgb(141, 133, 133);
+    top: 5%;
+    left: 90%;
+    position: fixed;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  #facebook {
+    color: rgb(141, 133, 133);
+    top: 5%;
+    left: 93%;
+    position: fixed;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  @media (max-width: 768px){
+  
+    .logo{
+        width: 40%;
+        margin-top: 0%;
+  
+    }
+      #instagram{
+        margin-left: -7%;
+    }
+    #facebook{
+      margin-left: -3%;
+    }
+    .navigation-bar{
+        width:67%;
+        margin: 0%;
+        padding: 0%;
+        left: 3%;
+    }
+    #whatsApp{
+      left:85%;
+  
+    }
+    .navigation-bar button{
+      margin:0;
+      padding:0.5;
+      margin-bottom: 10%;
+    }
+    #about-ankole, #menu-ankole, #review-ankole, #event-ankole, #live-ankole,#contact-ankole{
+      display:none;
+    }
+    .fadhilee{
+      background-size: 78vh 100vh;
+    }
+    #fadhilee-live{
+     top:25%;
+     left:5%;
+     font-size: x-large;
+    }
   }

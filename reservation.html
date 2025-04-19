@@ -8,65 +8,67 @@
     <link rel="stylesheet" href="reservation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
+<body class="reservation-page">
     <div class="reservation">
         <div class="karibu-reservation">
-            <div class="common-logo"><a href="index.html"><img src="image/logo ankole.svg" alt=""></a></div>
+            <a href=""><i class="fa-brands fa-whatsapp" id="whatsApp"></i></a>
+            <div class="logo"><a href="index.html"><img src="image/logo ankole.svg" alt=""></a></div>
             <div class="karibu">
                 <h2>Karibu</h2>
                 <h1>Reservation</h1>
             </div>
-            <div class="fixed-page">
-                <nav class="navigation-bar">
-                    <div class="content">
-                        <a href=""><i class="fa-solid fa-bars"></i></a>
-                        <div class="main-contents">
-                            <a href="index.html">Home</a>
-                            <hr>
-                            <a href="#">Our Story</a>
-                            <hr>
-                            <a href="reviews.html">Reviews</a>
-                            <hr>
-                            <a href="#">Careers</a>
-                            <hr>
-                            <a href="events.html">Events</a>
-                            <hr>
-                            <a href="live.html">Live</a>
-                            <hr>
-                            <a href="contact.html">Contacts</a>
-                            <hr>
-                        </div>
+            <nav class="navigation-bar">
+                <div class="content">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                    <div class="main-contents">
+                        <a href="index.html">Home</a>
+                        <hr>
+                        <a href="#">Our Story</a>
+                        <hr>
+                        <a href="reviews.html">Reviews</a>
+                        <hr>
+                        <a href="#">Careers</a>
+                        <hr>
+                        <a href="events.html">Events</a>
+                        <hr>
+                        <a href="live.html">Live</a>
+                        <hr>
+                        <a href="contact.html">Contacts</a>
+                        <hr>
                     </div>
-                    <div class="openning-hours">
-                        <a href=""><i class="fa-solid fa-clock"></i></a>
-                        <div class="schedule">
-                            <h2>Opening Hours</h2>
-                            <h3>Kitisuru</h3>
-                            <p>Mon-Sun</p>
-                            <p>9:00am-11:00pm</p><br>
-                            <h3>Kilimani</h3>
-                            <p>Mon-SUN</p>
-                            <p>7:30am-11:00pm</p>
-                        </div>
+                </div>
+                <div class="openning-hours">
+                    <a href=""><i class="fa-solid fa-clock"></i></a>
+                    <div class="schedule">
+                        <h2>Opening Hours</h2>
+                        <h3>Kitisuru</h3>
+                        <p>Mon-Sun</p>
+                        <p>9:00am-11:00pm</p><br>
+                        <h3>Kilimani</h3>
+                        <p>Mon-SUN</p>
+                        <p>7:30am-11:00pm</p>
                     </div>
-                    <span><a href="index.html">Home</a></span><a href="location.html">Menu</a>
-                    <a href="reviews.html">Reviews</a>
-                    <a href="events.html">Events</a>
-                    <a href="live.html">Live</a>
-                    <a href="contacts.html">Contacts</a>
-                    <a href="reservation.html"><button>Reservations</button></a>
-                </nav>
-                <i class="fa-brands fa-square-whatsapp" id="whatsApp"></i>
-            </div>
+                </div>
+                <a href="index.html" id="about-ankole">Home</a>
+                 <a href="location.html" id="menu-ankole">Menu</a>
+                <a href="reviews.html" id="review-ankole">Reviews</a>
+                <a href="events.html" id="event-ankole">Events</a>
+                <a href="live.html" id="live-ankole">Live</a>
+                <a href="contacts.html" id="contact-ankole">Contacts</a>
+                <a href="reservation.html"><button>Reservations</button></a>
+            </nav>
         </div>
         <div class="reservation-form">
             <form>
                 <label for="name">Name</label><br>
                 <input type="text" placeholder="Enter your first name"><br><br><br><br>
                 <label for="location">Location</label><br>
-                <input type="text" placeholder="kitisuru(Open 9 am-Closes 11 pm)" required><br><br><br><br>
+                <select>
+                    <option> Kitisuru(opens 9 am. closes 11pm)</option>
+                    <option >Kilimani(opens 7:30 am . closes 11 pm</option>
+                </select><br><br><br>
                 <label for="email">Email Address</label><br>
-                <input type="text" placeholder="e.ginfo@gmail.com" required><br><br><br><br>
+                <input type="email" placeholder="e.ginfo@gmail.com" required><br><br><br><br>
                 <label for="telephone">Tel/Cell</label><br>
                 <input type="number" placeholder="e.g 0700 000 000" required><br><br><br><br>
                 <label for="number of guests">Number of Guests</label><br>
